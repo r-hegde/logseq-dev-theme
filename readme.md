@@ -1,4 +1,6 @@
-This fork contains my modifications to logseq dev theme.
+# Some Edits to Logseq Dev Theme
+
+This fork contains some modifications to logseq dev theme. Most (all?) of these were thought of by other wonderful logseq users.
 
 1. Increase the main content width
 2. Remove unnecessary navigation items, i.e. items that I don't use like "Recent" in the left sidebar, "Join the community" under the top-... dropdown, etc.
@@ -8,6 +10,11 @@ This fork contains my modifications to logseq dev theme.
 6. Adjust height of youtube video embeds
 7. Change the "highlight" to actual highlight instead of an underline
 8. (Most trivial one) Increase the default font size because I've an amazing eyesight.
+9. Changing the look of "pinned" notes. This is how it looks in dark theme
+
+![Pinned_note](https://user-images.githubusercontent.com/99054998/158307030-b4c373bb-b6e0-4afa-8828-8aa14e14112a.png)
+
+
 
 --------------------------------
 ORIGINAL README
