@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code");
 @import url("https://cdn.jsdelivr.net/gh/adobe-fonts/source-sans@3.046R/source-sans-3VF.css");
+@import "https://codemirror.net/theme/blackboard.css";
 @font-face {
   font-family: "Source Han Sans VF";
   font-weight: 200 900;
@@ -96,6 +97,70 @@ iframe[id^='youtube-player'] {
 #main-content-container .file {
   margin: 0 auto !important;
 }
+
+/* Formatting to make cool pinned notes */
+
+.pinned {
+    margin-top: 10px;
+    position: relative;
+  }
+
+.pinned svg {
+      display: none;
+  }
+
+.pinned {
+    margin-top: 10px;
+    position: relative;
+  }
+  .pinned > :last-child {
+    color: #333;
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 12px 10px -7px rgb(0 0 0 / 20%);
+    background: #89f2fa;
+    transform: rotate(2deg);
+  }
+  .pinned > :first-child {
+    background-color: #aaa;
+    display: block;
+    height: 32px;
+    width: 2px;
+    position: absolute;
+    left: 50%;
+    top: -16px;
+    z-index: 1;
+    padding: 0;
+  }
+  .pinned > :first-child:after {
+    background-color: #A31;
+    background-image: radial-gradient(25% 25%, circle, hsla(0,0%,100%,.3), hsla(0,0%,0%,.3));
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.1),
+                inset 3px 3px 3px hsla(0,0%,100%,.2),
+                inset -3px -3px 3px hsla(0,0%,0%,.2),
+                23px 20px 3px hsla(0,0%,0%,.15);
+    content: '';
+    height: 12px;
+    left: -5px;
+    position: absolute;
+    top: -10px;
+    width: 12px;
+  }
+  .pinned > :first-child:before {
+    background-color: hsla(0,0%,0%,0.1);
+    box-shadow: 0 0 .25em hsla(0,0%,0%,.1);
+    content: '';
+    height: 24px;
+    width: 2px;
+    left: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(57.5deg);
+    transform-origin: 50% 100%;
+  }
 
 html,
 body {
